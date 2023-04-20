@@ -33,4 +33,6 @@ npm start
 
 ### Android notes:
 
+In order for Metro (React Native's bundler) to connect to the emulator, you may need to run `adb reverse tcp:8081 tcp:8081`.
+
 You will need to generate a Google Maps API key and insert it into the `com.google.android.geo.API_KEY` metadata value in `android/app/src/main/AndroidManifest.xml`. You can generate the key here: https://developers.google.com/maps/documentation/android-sdk/get-api-key
