@@ -1,4 +1,4 @@
-# Native App
+# Mobile Automation QA Engineer Demo App
 
 This app was 'ejected' from Expo, and has the following requirements. Other versions may be compatible, but for clarity we have built this successfully with:
 
