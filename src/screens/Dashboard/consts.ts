@@ -6,5 +6,5 @@ export const defaultParams: QueryParams = {
   maxresults: 20,
   verbose: false,
   // TODO: use env variable
-  key: "open charge map api key goes here",
+  key: "08a9c420-6100-4f3f-be7f-98b41730c60e",
 };
