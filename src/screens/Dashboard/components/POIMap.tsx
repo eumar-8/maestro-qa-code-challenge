@@ -44,7 +44,7 @@ export const POIMap = ({
       }}
     >
       {pois.map((poi) => {
-        return <POIMarker poi={poi} />;
+        return <POIMarker key={poi.ID} poi={poi} />;
       })}
     </MapView>
   );

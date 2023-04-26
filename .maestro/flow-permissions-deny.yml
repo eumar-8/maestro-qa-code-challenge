@@ -1,0 +1,13 @@
+appId: energy.ev.qa.app
+---
+- launchApp:
+    clearState: true
+    permissions:        
+     location: unset # notification permission is unset by default
+# Tap on Allow on permission dialogue if one shows up
+- tapOn:
+     text: Don’t Allow
+
+- assertVisible: You need to grant location permissions to continue
+
+   

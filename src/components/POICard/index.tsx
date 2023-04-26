@@ -12,7 +12,7 @@ export const POICard = ({ poi }: IPOICard) => {
   };
 
   return (
-    <View style={styles.cardWrap} key={poi.ID}>
+    <View testID="station-details" style={styles.cardWrap} key={poi.ID}>
       <View style={styles.information}>
         <Text style={styles.addressTitle}>{poi.AddressInfo.Title}</Text>
         <Text>{poi.AddressInfo.AddressLine1}</Text>

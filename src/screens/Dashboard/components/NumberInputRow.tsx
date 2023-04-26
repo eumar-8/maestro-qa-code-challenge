@@ -6,16 +6,19 @@ export const NumberInputRow = ({
   value,
   onValueChange,
   onSubmit,
+  testID,
 }: {
   prefix: string;
   suffix: string;
   value: number | undefined;
   onValueChange: (newValue: string) => void;
   onSubmit: () => void;
+  testID?: string;
 }) => (
-  <View style={styles.container}>
+  <View  style={styles.container}>
     <Text style={styles.text}>{prefix}</Text>
     <TextInput
+     testID={testID}
       value={`${value}`}
       keyboardType="numeric"
       onChangeText={onValueChange}

@@ -8,7 +8,7 @@ export const POIList = ({ pois }: { pois: OpenChargeMapPoiData }) => (
     data={pois}
     keyExtractor={(item) => String(item.ID)}
     renderItem={({ item }: { item: ExtendedPOIDetails }) => (
-      <POICard poi={item} />
+      <POICard key={item.ID} poi={item} />
     )}
   />
 );

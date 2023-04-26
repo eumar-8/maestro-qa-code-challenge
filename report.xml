@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="iPhone 14 Pro - iOS 16.2 - E153F81B-A77C-4EB1-A965-3A0B0E0382CF" tests="1" failures="1">
+    <testcase id="location-permissions-deny" name="location-permissions-deny" classname="location-permissions-deny">
+      <failure>Assertion is false: "You need to grant location permissions to continuse" is visible</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

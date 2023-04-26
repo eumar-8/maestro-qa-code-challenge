@@ -1,0 +1,28 @@
+appId: energy.ev.qa.app
+---
+- launchApp:
+    clearState: true
+    permissions:        
+     location: unset # notification permission is unset by default
+# Allow location permission
+- tapOn:
+     text: Allow Once
+#See list of stations
+- assertVisible:
+   id: "station-details"
+   index: 0
+# change amount of stations
+- tapOn:
+    id: "returning-input"
+- eraseText
+- inputText: "4"
+- pressKey: "Enter"
+# See list of stations again
+- assertVisible:
+    id: "station-details"
+    index: 3
+- assertNotVisible:
+    id: "station-details"
+    index: 4
+
+   

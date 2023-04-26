@@ -40,12 +40,12 @@ export const Header = ({ city, distance, displayMap, distanceUnit, maxResults, o
         <FontAwesome name="map-marker" size={24} color="blue" />
         <View style={styles.switchContainer}>
           <Text>List</Text>
-          <Switch style={styles.switch} value={displayMap} onChange={event => onDisplayMapChange(event.nativeEvent.value)}/>
+          <Switch   testID="Switch" style={styles.switch} value={displayMap} onChange={event => onDisplayMapChange(event.nativeEvent.value)}/>
           <Text>Map</Text>
         </View>
       </View>
       <NumberInputRow prefix="Within" suffix={distanceUnit || "miles"} value={mutableDistance} onValueChange={onDistanceTextChange} onSubmit={onSubmitDistance}/>
-      <NumberInputRow prefix="Returning" suffix="results" value={mutableMaxResults} onValueChange={onResultsTextChange} onSubmit={onSubmitMaxResults}/>
+      <NumberInputRow  testID="returning-input" prefix="Returning" suffix="results" value={mutableMaxResults} onValueChange={onResultsTextChange} onSubmit={onSubmitMaxResults} />
     </View>
   )
 };

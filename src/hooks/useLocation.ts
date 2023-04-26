@@ -30,7 +30,11 @@ export const useLocation = () => {
         return
       }
 
-      const loc = await Location.getCurrentPositionAsync()
+      // const loc = await Location.getCurrentPositionAsync()
+      const loc = {coords: {latitude: 41.4100152,
+        longitude: 2.21383,
+        altitude: 123,
+        accuracy: 1,altitudeAccuracy:1, heading:1, speed:1}, timestamp: 16254364}
       setCoordinates(loc.coords)
     } catch (error) {
       setError(`useLocation error - ${error}`)

@@ -6,5 +6,5 @@ export const defaultParams: QueryParams = {
   maxresults: 20,
   verbose: false,
   // TODO: use env variable
-  key: "08a9c420-6100-4f3f-be7f-98b41730c60e",
+  key: "2e6d6bc6-fa40-49e0-a4e7-54cfb0be7abd",
 };

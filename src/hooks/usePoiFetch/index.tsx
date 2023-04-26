@@ -16,6 +16,7 @@ export const usePoiFetch = (params: QueryParams) => {
 
   const fetchPois = async (params: QueryParams, coords: LocationObjectCoords) => {
     try {
+      console.log("fetching pois");
       const { data } = await axios.get<OpenChargeMapPoiData>(baseUrl, {
         params: {
           ...params,
