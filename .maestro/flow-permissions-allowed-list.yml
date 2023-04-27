@@ -2,6 +2,7 @@ appId: energy.ev.qa.app
 ---
 - launchApp:
     clearState: true
+    clearKeychain: true  
     permissions:        
      location: unset # notification permission is unset by default
 # Allow location permission
@@ -24,5 +25,13 @@ appId: energy.ev.qa.app
 - assertNotVisible:
     id: "station-details"
     index: 4
+# press one item on the list  
+- tapOn:
+    text: "See station details"
+    index: 0
+- assertVisible: Start charging your vehicle
+- tapOn: Start charging your vehicle
+- assertVisible: Started charging!
+- tapOn: Dismiss
+- tapOn: Go back
 
-   
