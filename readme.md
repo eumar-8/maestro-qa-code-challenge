@@ -1,38 +1,39 @@
-# Mobile Automation QA Engineer Demo App
+# Proof of Concept: Using Maestro as an End-to-End Tool in the Ev.energy Project
 
-This app was 'ejected' from Expo, and has the following requirements. Other versions may be compatible, but for clarity we have built this successfully with:
+This document outlines the proof of concept of using[Maestro](https://maestro.mobile.dev/getting-started/installing-maestro)  as an end-to-end tool in the Ev.energy project. We tested the QA code challenge using Maestro with four different flows 
+1. Asking for location permission and denying it.
+2. Asking for location permission and allowing it.
+3. Using the list of charge stations.
+4. Using the map of charge stations.
 
-- Xcode 14.2.x
-- Android Studio (2021.3.1 Patch 1)
-- nvm 0.39.1
-- Node 16.16.0
-- Cocoapods 1.11.3
+# Norte: so far I have tested it in Ios simulator
+## Setup
 
-If you have issues building this application, do ensure you're using the above versions. We cannot guarantee compatibility with other versions.
+To run the proof of concept, follow these steps:
 
-## OpenChargeMap API Key
+1. Clone the repository to your local machine.
+2. Install Maestro by running `curl -Ls "https://get.maestro.mobile.dev" | bash`.
+3. Before running Flows on iOS Simulator, install Facebook IDB tool 
+   `brew tap facebook/fb
+    brew install facebook/fb/idb-companion`
+3. Install the project dependencies by running `npm install`.
+4. Build the App
 
-This demo app uses OpenChargeMap's API. In order to get charger information from OpenChargeMap, you will need to generate an API key. Follow the instructions here to generate it: https://community.openchargemap.org/t/api-keys-are-now-required/161, and add it in to `src/screens/Dashboard/consts.ts`
 
-## Quick Start
+## Testing
 
-```sh
-# use the specified node version
-nvm use
+To test the different flows fun in your termina:
 
-# Install the dependencies
-npm install
-cd ios
-pod install
+1. `maestro test .maestro/flow-charge-stations-map.yml`
+2. `maestro test .maestro/flow-charge-stations-list.yml`
+3. `maestro test .maestro/flow-permissions-allowed.yml`
+4. `maestro test .maestro/ flow-permissions-deny`
+5. you can also run `maestro studio` is a personal assistant to help write your Maestro Flows
 
-# Spin up the dev server
-npm start
+## Conclusion
+pros:
+In conclusion, Maestro is a valuable tool for developers and testers looking to streamline their mobile app testing process. has a quick and simple setup process and is easy to use thanks to its clear, human-readable syntax. it works very well on different operating systems and mobile platforms, and can be integrated easily into continuous integration workflows.
 
-# You can now build the app via Xcode or Android Studio
-```
-
-### Android notes:
-
-In order for Metro (React Native's bundler) to connect to the emulator, you may need to run `adb reverse tcp:8081 tcp:8081`.
-
-If writing tests against the Android map view, you will need to generate a Google Maps API key and insert it into the `com.google.android.geo.API_KEY` metadata value in `android/app/src/main/AndroidManifest.xml`. You can generate the key here: https://developers.google.com/maps/documentation/android-sdk/get-api-key
+const:
+There are some limitations and disadvantages to using the Maestro tool I have found so far, for example
+it is not suitable for writing complex tests. Additionally, the Maestro community is relatively small compared to other frameworks. Maestro also doesn't generate detailed reports and does not yet support real iOS devices.
