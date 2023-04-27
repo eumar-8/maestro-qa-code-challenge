@@ -26,7 +26,7 @@ To test the different flows fun in your termina:
 1. `maestro test .maestro/flow-charge-stations-map.yml`
 2. `maestro test .maestro/flow-charge-stations-list.yml`
 3. `maestro test .maestro/flow-permissions-allowed.yml`
-4. `maestro test .maestro/ flow-permissions-deny`
+4. `maestro test .maestro/flow-permissions-deny.yml`
 5. you can also run `maestro studio` is a personal assistant to help write your Maestro Flows
 
 ## Conclusion
