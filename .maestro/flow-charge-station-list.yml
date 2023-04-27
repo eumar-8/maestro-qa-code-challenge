@@ -1,17 +1,6 @@
 appId: energy.ev.qa.app
 ---
-- launchApp:
-    clearState: true
-    clearKeychain: true  
-    permissions:        
-     location: unset # notification permission is unset by default
-# Allow location permission
-- tapOn:
-     text: Allow Once
-#See list of stations
-- assertVisible:
-   id: "station-details"
-   index: 0
+- runFlow: flow-permissions-allowed.yml
 # change amount of stations
 - tapOn:
     id: "returning-input"
@@ -34,4 +23,3 @@ appId: energy.ev.qa.app
 - assertVisible: Started charging!
 - tapOn: Dismiss
 - tapOn: Go back
-

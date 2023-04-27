@@ -1,13 +1,5 @@
 appId: energy.ev.qa.app
 ---
-- launchApp:
-    clearState: true
-    permissions:        
-     location: unset # notification permission is unset by default
-
-- tapOn:
-     text: Allow Once
-
 - tapOn: 
    id: Switch
 - tapOn: Map pin
