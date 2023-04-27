@@ -6,7 +6,7 @@ This document outlines the proof of concept of using [Maestro](https://maestro.m
 3. Using the list of charge stations.
 4. Using the map of charge stations.
 
-### Norte: so far I have tested it in Ios simulator
+### Note: so far I have tested it in Ios simulator
 ## Setup
 
 To run the proof of concept, follow these steps:
