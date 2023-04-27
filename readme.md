@@ -1,12 +1,12 @@
 # Proof of Concept: Using Maestro as an End-to-End Tool in the Ev.energy Project
 
-This document outlines the proof of concept of using[Maestro](https://maestro.mobile.dev/getting-started/installing-maestro)  as an end-to-end tool in the Ev.energy project. We tested the QA code challenge using Maestro with four different flows 
+This document outlines the proof of concept of using [Maestro](https://maestro.mobile.dev/getting-started/installing-maestro) as an end-to-end tool in the Ev.energy project. We tested the QA code challenge using Maestro with four different flows 
 1. Asking for location permission and denying it.
 2. Asking for location permission and allowing it.
 3. Using the list of charge stations.
 4. Using the map of charge stations.
 
-# Norte: so far I have tested it in Ios simulator
+### Norte: so far I have tested it in Ios simulator
 ## Setup
 
 To run the proof of concept, follow these steps:
@@ -19,7 +19,6 @@ To run the proof of concept, follow these steps:
 3. Install the project dependencies by running `npm install`.
 4. Build the App
 
-
 ## Testing
 
 To test the different flows fun in your termina:
@@ -31,6 +30,7 @@ To test the different flows fun in your termina:
 5. you can also run `maestro studio` is a personal assistant to help write your Maestro Flows
 
 ## Conclusion
+
 pros:
 In conclusion, Maestro is a valuable tool for developers and testers looking to streamline their mobile app testing process. has a quick and simple setup process and is easy to use thanks to its clear, human-readable syntax. it works very well on different operating systems and mobile platforms, and can be integrated easily into continuous integration workflows.
 
