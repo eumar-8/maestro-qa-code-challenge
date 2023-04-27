@@ -37,3 +37,7 @@ In conclusion, Maestro is a valuable tool for developers and testers looking to 
 const:
 There are some limitations and disadvantages to using the Maestro tool I have found so far, for example
 it is not suitable for writing complex tests. Additionally, the Maestro community is relatively small compared to other frameworks. Maestro also doesn't generate detailed reports and does not yet support real iOS devices.
+
+## Demo video
+
+https://user-images.githubusercontent.com/23506210/234942371-6bf5220b-3b75-4e07-b685-b8991d9801b2.mov
